@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/* CSS Document */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  color: #333;
+}
+.wrapper {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.header {
+  width: 100%;
+  height: 81px;
+  background: white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  box-shadow: 0 0.125rem 0.2rem rgb(0 0 0 / 8%);
+}
+.logo {
+  width: 10%;
+  max-height: 60px;
+  vertical-align: middle;
+  border-style: none;
+  background-color: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding-left: 16px;
+}
+.nav {
+  width: 85%;
+  height: 60px;
+  background: none;
+  display: flex;
+  float: right;
+  justify-content: flex-end;
+  align-items: center;
+}
+#menu {
+  width: 90%;
+  height: 60px;
+  background: none;
+  display: flex;
+  align-items: center;
+  float: right !important;
+  box-sizing: border-box;
+  text-align: center;
+}
+/* Sử dụng cho menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background: #F8C800; */
+  background-color: 0;
+  font-weight: 700;
+  /* text-transform: uppercase; */
+}
+li {
+  float: left;
+  /* border-right: 1px solid white; */
+  text-transform: uppercase;
+  padding-right: 0.5rem;
+}
+li.dropdown {
+  display: inline-block;
+  padding: 16px 8px;
+}
+li a:hover, .dropdown:hover {
+  background: #f5ed28;
+}
+li a, .dropdown-btn {
+  display: inline-block;
+  color: #333;
+  text-align: center;
+  padding: 0 7px;
+  text-decoration: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #f5ed28;
+  z-index: 1;
+  line-height: 2;
+  border: none;
+  transition: all .3s ease-in-out;
+  text-transform: none;
+  padding-right: 0.5rem;
+  min-width: 227px;
+  top: 60px;
+  left: 192px;
+}
+.dropdown-content a {
+  color: #333;
+  padding: 3px 16px;
+  display: block;
+  text-align: left;
+  background-color: transparent;
+  border: 0 !important;
+  padding-left: 1.5rem;
+}
+.dropdown-content a:hover {
+  /* background-color: tomato; */
+  background-image: linear-gradient(to right, #ffc600, #F8C800, #f5ed28);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.item {
+  text-align: left;
+  padding-left: 10px;
+  font-weight: bolder;
+}
+.item-symbol {
+  font-size: 7px;
+  position: relative;
+  top: -3px;
+}
+.button-signin {
+  background-color: #ffc600;
+  border: none;
+  color: white;
+  padding: 0px 10px;
+  border-radius: 6rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+.button-signin:hover {
+  background-color: #E08200;
+  color: white;
+  display: block;
+  background-image: linear-gradient(to right, #E08200, #ffc600)
+}
+.main {
+  width: 90%;
+  height: auto;
+  background: white;
+  margin: 150px 90px;
+  float: left;
+}
+.content {
+  width: 100%;
+  height: auto;
+  background: none;
+  float: left;
+}
+.shadow-content {
+  width: 100%;
+  height: auto;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 50px;
+  box-sizing: border-box;
+}
+.intro {
+  width: 30%;
+  height: auto;
+  background-color: none;
+  float: left;
+  padding: 20px 0px 50px 50px;
+  box-sizing: border-box;
+}
+.img {
+  width: 180px;
+  height: 300px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 0 15px 2px #ced4da;
+  padding: 20px;
+  margin: 15px;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+}
+.img:hover {
+  background-color: #f5ed28;
+}
+.row-content {
+    width: 48%;
+    height: auto;
+    background: none;
+    /*float: left;*/
+    align-items: center;
+    display: inline-block;
+    text-align: justify;
+    padding: 0px 10px;
+    margin: 0px 10px;
+    box-sizing: border-box;
+}
+#footer {
+    background: none;
+    width: 100%;
+    height: 100px;
+    /*box-shadow: 5px 15px 15px 0 rgb(153 153 153 / 40%);*/
+    text-align: left;
+    box-sizing: border-box;
+}
+.footer-sub {
+    background: none;
+    width: 100%;
+    height: 220px;
+    float: left;
+    display: block;
+}
+.footer-title {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px;
+    border-bottom: 3px solid black;
+}
+.col-1 {
+    width: 33.33%;
+    background: none;
+    float: left;
+}
+.ul-list {
+    list-style-type: none;
+    padding: 10px;
+    overflow: visible;
+}
+.box-2 {
+    padding: 10px;
+    margin: 0px;
+    box-sizing: border-box;
+    width: 25%;
+}

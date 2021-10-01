@@ -1,0 +1,260 @@
+:root {
+    --header-color: #FFC600;
+    --width: 1048px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.container {
+    width: var(--width);
+    height: auto;
+    background-color: #ffffff;
+    margin: 0 auto;
+    box-shadow: 0 10px 10px #75757541;
+}
+.header { 
+    height: 80px;
+    width: var(--width);
+    background-color: white;
+    box-shadow:0;
+    padding: 5px 20px;
+    position: fixed;
+    top:0;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.header:hover {
+    box-shadow: 0 10px 10px 0 rgba(121, 121, 121, 0.13);
+}
+
+#menu {
+    display: inline-block;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+    margin-right: 20px;
+    font-size: 16px;
+
+    
+}
+/* Sử dụng cho menu */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background: #F8C800; */
+    background-color: transparent;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+}
+
+#logo{
+    float: left;
+}
+
+li {
+    float: left;
+    /* border-right: 1px solid white; */
+    text-transform: uppercase;
+    padding-right: 0.5rem;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+li a:hover,
+.dropdown:hover {
+    background: #f5ed28;
+}
+
+li a,
+.dropdown-btn {
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #f5ed28;
+    z-index: 1;
+    line-height: 2;
+    border: none;
+    transition: all .3s ease-in-out;
+    text-transform: none;
+    /* padding-right: 0.5rem; */
+    padding: 10px;
+    min-width: 227px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 3px 16px;
+    display: block;
+    text-align: left;
+    background-color: transparent;
+    /* transition: all .3s ease-in-out; */
+    border: 0!important;
+    padding-left: 1.5rem;
+}
+
+.dropdown-content a:hover {
+    /* background-color: tomato; */
+    background-image: linear-gradient(to right, #ffc600, #F8C800, #f5ed28);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.item {
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bolder;
+}
+
+.item-symbol {
+    font-size: 7px;
+    position: relative;
+    top: -3px;
+}
+.dangki {
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #f5ed28;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+.dangki:hover {
+    background-color: #ffc600;
+    border: 1px solid #ffc600;
+    cursor: pointer;
+}
+.main {
+    margin-top:80px;
+}
+.noidung1 {
+    height: 300px;
+    padding-top: 40px;
+}
+.tieude {
+    width: 280px;
+    height: 300px;
+    background-color: #ffffff;
+    float: left;
+    padding: 20px;
+}
+.title {
+    color: var(--header-color);
+    padding: 8px;
+}
+.icon{
+    width: 768px;
+    height: 300px;
+    background-color: #ffffff;
+    float: left;
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon1 {
+    padding: 10px;
+    margin-top: 10px;
+    background-color:azure;
+    width: 170px;
+    height: 280px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px  rgb(182, 182, 182);
+}
+.icon1:hover {
+    background-color: #f5ed28;
+}
+.icon1 > img {
+    margin: 10px auto 10px auto;
+}
+.noidung2 {
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px
+}
+.noidung2 hr {
+    height: 2px;
+    border-width: 0;
+    background-color: rgb(172, 172, 172);
+    margin:12px 0;
+}
+.text {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.text .text1 {
+    width: 48%;
+    float: left;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text .text2 {
+    width: 48%;
+    float: left;
+    padding: 0 10px;
+}
+.text2 > .img11 {
+    float: right;
+}
+.text2 > .img22 {
+    float: left;
+}
+/* footer */
+.footer {
+    background-color: #E1E1E1;
+    height: 325px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.khung1{
+   
+    height: 325px;
+    width: 999px;
+    position: absolute;
+
+}
+.column{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33.333333333333%;
+    float: left;
+}
+.thanhpho{
+    margin: 15px;
+    text-align: center;
+
+}
+.footer__heading{
+    text-align: center;
+}
+.footer-item__link{
+    text-align: left;
+}
